@@ -1,0 +1,19 @@
+{
+  "wrapper": "main",
+  "sections": {
+    "main": {
+      "type": "supplementFacts",
+      "settings": {
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video"
+  ]
+}

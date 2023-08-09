@@ -1,0 +1,28 @@
+<main>
+  {% form 'cart', cart %}
+    <h1>Cart</h1>
+    {% if cart.empty? %}
+      <h2>Your cart is empty</h2>
+    {% else %}
+      <ul>
+        {% for item in cart.items %}
+          <li>
+            {{ item.image | image_url | img_tag: 'floating container of Killer Instinct' }}
+            {{ item.final_line_price | money }}
+            <input name="updates[]" value="{{ item.quantity }}" />
+            <a href="{{ item.url_to_remove }}">
+              delete
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <h3>Total: {{ cart.total_price | money }}</h3>
+      <button type="submit" name="update">
+        Update
+      </button>
+      <button type="submit" name="checkout">
+        Checkout
+      </button>
+    {% endif %}
+  {% endform %}
+</main>
