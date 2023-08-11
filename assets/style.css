@@ -1,0 +1,165 @@
+/*==================================================*/
+/*-----------------Universal Styles-----------------*/
+/*==================================================*/
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    transform: scale( .9 );
+  }
+  50% {
+    transform: scale( 1 );
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    transform: scale( 0.9 );
+  }
+}
+.content {
+  display: none;
+}
+[alt~="Loader"] {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40vh;
+  margin-top: 30vh;
+  animation: pulse-animation 2.5s infinite;
+}
+:root {
+  --regular: tabular-regular;
+  --bold: tabular-bold;
+  --light: tabular-light;
+  --epic: silver-sideshow-font;
+}
+@font-face {
+  font-family: tabular-regular;
+  src: url('//sharklabz.shop/cdn/shop/t/7/assets/Tabular-Regular.woff?v=65714517299537442891691699843');
+}
+@font-face {
+  font-family: tabular-bold;
+  src: url('//sharklabz.shop/cdn/shop/t/7/assets/Tabular-Bold.woff?v=167931514271939301381691699842');
+}
+@font-face {
+  font-family: tabular-light;
+  src: url('//sharklabz.shop/cdn/shop/t/7/assets/Tabular-Light.woff?v=53713350409793041771691699842');
+}
+@font-face {
+  font-family: silver-sideshow-font;
+  src: url('//sharklabz.shop/cdn/shop/t/7/assets/Silver%20Sideshow.woff?v=65991536877502004221691700533');
+}
+html {
+  font-family: var(--regular);
+}
+li {
+  list-style-type: none;
+}
+body {
+  margin: 0;
+}
+/*============================================================*/
+/*-----------------Shark Labz Branding Styles-----------------*/
+/*============================================================*/
+:root {
+  --blue: #1378be;
+}
+/*Header*/
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav.main {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  height: 150px;
+  box-shadow: 0px 7px 7px gray;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--bold);
+}
+nav a:focus {
+  color: var(--blue);
+}
+.desktop {
+  display: none;
+}
+#logo img {
+  width: 100%;
+}
+#logo {
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logoContainer {
+  width: 100%;
+}
+#menuClosed {
+  margin-left: 2rem;
+}
+.menuButton {
+  background: none;
+  border: none;
+}
+#area {
+  width: 75px;
+  margin-left: 2rem;
+}
+#openMenu {
+  max-height: 368px;
+}
+nav.mobile {
+  max-height: 0px;
+  transition-property: max-height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  background: rgb(66,66,66);
+  background: linear-gradient(180deg, rgba(66,66,66,1) 0%, rgba(0,0,0,1) 100%);
+  box-shadow: 0px 7px 7px gray;
+}
+nav.mobile ul {
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 50px 0px #0000;
+  padding-left: 0;
+}
+nav.mobile li {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/*=================================================================*/
+/*-----------------Killer Instinct Branding Styles-----------------*/
+/*=================================================================*/
+:root {
+  --red: #DA000D;
+  --black: #171717;
+  --white: #f5f5f5;
+  --yellow: #FFC700;
+  /*--orange: #;*/
+}
+/*Landing Page*/
+h1.firstImpression {
+  color: var(--white);
+}
+
+/*==================================================*/
+/*-----------------Desktop Viewport-----------------*/
+/*==================================================*/

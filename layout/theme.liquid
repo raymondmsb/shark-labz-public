@@ -1,12 +1,13 @@
 <html>
   <head>
-    {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'logo.png' | asset_img_url: 'grande' | img_tag: 'Shark Labz Logo Loader' }}
+    {{ content_for_header }}
   </head>
-  <body>
-    {% render 'header' %}
-    {{ content_for_layout }}
-    {% render 'footer' %}
-    {{ 'script.js' | asset_url | script_tag }}
-  </body>
+    <body>
+      {% render 'header' %}
+      {{ content_for_layout }}
+      {% render 'footer' %}
+      {{ 'script.js' | asset_url | script_tag }}
+    </body>
 </html>

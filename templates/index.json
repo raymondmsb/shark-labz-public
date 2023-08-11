@@ -1,5 +1,5 @@
 {
-  "wrapper": "main",
+  "wrapper": "main.content",
   "sections": {
     "main": {
       "type": "firstImpression",
