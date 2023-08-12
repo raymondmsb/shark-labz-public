@@ -2,7 +2,7 @@
 
 Use this theme in your own environment:
 1. Navigate to the directory with your terminal
-The following Steps are for Windows operating systems, for linux or OS please refer to: https://shopify.dev/docs/themes/tools/theme-kit/configuration-reference
+The following Steps are for Windows operating systems, for linux or Mac OS please refer to: https://shopify.dev/docs/themes/tools/theme-kit/configuration-reference
 2. Install chocolatey by running this command in your terminal with admin priveleges:
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol =  [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 3. Install shopify theme kit with the following command running your terminal with admin priveleges:
