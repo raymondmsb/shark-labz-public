@@ -1,0 +1,45 @@
+<header class="content">
+  <nav class="main">
+    <button class="menuButton" aria-controls="primary-navigation" aria-expanded="false">
+      <span id="lineOne">
+      </span>
+      <span id="lineTwo">
+      </span>
+      <span id="lineThree">
+      </span>
+    </button>
+    <ul id="instinct" class="desktop">
+      {% for link in linklists.main-menu.links %}
+        <li>
+          <a href="{{ link.url }}">
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}      
+    </ul>
+    <a href="http://sharklabz.shop/pages/company" id="logo">
+      {{ 'logo (optimized).png' | asset_img_url: 'medium' | img_tag: 'Shark Labz Logo' }}
+    </a>
+    <ul id="company" class="desktop">
+      {% for link in linklists.company-menu.links %}
+        <li>
+          <a href="{{ link.url }}">
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div id="area"></div>
+  </nav>
+  <nav class="mobile">
+    <ul>
+      {% for link in linklists.mobile-menu.links %}
+        <li>
+          <a href="{{ link.url }}">
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

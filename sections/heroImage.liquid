@@ -1,0 +1,21 @@
+<div class="background-image content">
+</div>
+<style>
+  .background-image {
+    width: 100%;
+    background-image: url('{{ 'labMobile (optimized).jpg' | asset_img_url: 'grande' }}');
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-size: cover;
+    z-index: -1;
+  }
+  @media screen and (min-width: 768px) {
+    .background-image {
+      background-image: url('{{ 'lab (optimized).jpg' | asset_img_url: '2560x1706' }}');
+      height: calc(100vh - 60px);
+    }
+  }
+</style>

@@ -1,0 +1,13 @@
+{
+  "wrapper": "main",
+  "sections": {
+    "main": {
+      "type": "comingSoon",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

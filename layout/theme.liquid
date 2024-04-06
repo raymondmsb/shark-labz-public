@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="{{ 'favicon-16x16.png' | asset_url }}">
+    <link rel="icon" type="image/png" href="{{ 'favicon-32x32.png' | asset_url }}">
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'logo (optimized).png' | asset_img_url: 'grande' | img_tag: 'Shark Labz Logo Loader' }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    {{ content_for_header }}
+  </head>
+    <body>
+      {% render 'header' %}
+      {{ content_for_layout }}
+      {% render 'footer' %}
+      {{ 'script.js' | asset_url | script_tag }}
+    </body>
+</html>

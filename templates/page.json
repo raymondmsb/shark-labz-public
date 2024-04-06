@@ -1,0 +1,25 @@
+{
+  "wrapper": "main",
+  "sections": {
+    "main": {
+      "type": "firstImpression",
+      "settings": {
+      }
+    },
+    "credibility": {
+      "type": "credibility",
+      "settings": {
+      }
+    },
+    "product": {
+      "type": "productDetails",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "credibility",
+    "product"
+  ]
+}

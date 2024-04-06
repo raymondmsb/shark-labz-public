@@ -1,0 +1,25 @@
+{
+  "wrapper": "main",
+  "sections": {
+    "main": {
+      "type": "heroImage",
+      "settings": {
+      }
+    },
+    "details": {
+      "type": "companyDetails",
+      "settings": {
+      }
+    },
+    "slideShow": {
+      "type": "slideShow",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "details",
+    "slideShow"
+  ]
+}

@@ -1,0 +1,42 @@
+<div class="content contactBackground">
+  <div class="bubbles">
+    {{ 'bubbles.png' | asset_img_url: 'medium' | img_tag: 'Bubbles' }}
+  </div>
+  <div class="contactContainer" onclick="begin()">
+    <h1>Contact</h1>
+    {% form 'contact' %}
+      {{ form.errors | default_errors }}
+
+      <div class="desktopDisplay">
+        <div class="piece first-name">
+          <input type="text" name="contact[first_name]" id="first-name" aria-label="First Name" placeholder="First Name*" />
+        </div>
+      
+        <div class="piece last-name">
+          <input type="text" name="contact[last_name]" id="last-name" aria-label="Last Name" placeholder="Last Name*" />
+        </div>
+      </div>
+
+      <div class="desktopDisplay">
+        <div class="piece email">
+          <input type="email" name="contact[email]" id="email" aria-label="Email" placeholder="Email*" />
+        </div>
+      
+        <div class="piece order-number">
+          <input type="text" name="contact[order_number]" id="order-number" placeholder="Order Number" aria-label="Order Number (Not Required)" />
+        </div>
+      </div>
+    
+      <div class="piece message">
+        <textarea name="contact[body]" id="message" aria-label="Message" placeholder="Message*" rows="3"></textarea>
+      </div>
+    
+      <button type="submit">
+        Send
+      </button>
+    {% endform %}
+  </div>
+</div>
+<script>
+  const begin = () => {document.querySelector('.bubbles').setAttribute("id", "bubbleRise")};
+</script>
